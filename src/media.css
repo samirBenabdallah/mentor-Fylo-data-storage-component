@@ -1,0 +1,25 @@
+@media screen and (max-width: 760px) {
+  body {
+    flex-direction: column;
+    main:first-child {
+      width: 300px;
+      height: 200px;
+      margin: 0;
+    }
+    main:last-child {
+      text-align: center;
+      width: 300px;
+      height: 150px;
+      section {
+        top: auto;
+        bottom: -40px;
+        right: 50%;
+        width: 200px;
+        transform: translateX(50%);
+        &::before {
+          content: none;
+        }
+      }
+    }
+  }
+}
